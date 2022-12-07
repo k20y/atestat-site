@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Pong</title>
+        <link rel="stylesheet" href="../css/style.css">
+
+         <!--font and icons-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    </head>
+
+
+    <body>
+    
+        <header>
+            
+            <a class="logo"href="../index.html"><img src="../logo.png"></a>
+            
+            <nav>
+                <ul>
+
+                    <li class="dropdown-menu">
+                        <a class="main" href="#" >Jocuri<span class="material-symbols-outlined">expand_more</span></a>
+                            <ul class="dropdown">
+                            <li><a href="pong.html">Pong</a></li>
+                            <li><a href="#">Subcategorie 2</a></li>
+                            <li><a href="#">Subcategorie 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="main" href="#">Despre</a></li>
+                    <li><a class="main" href="#">Contact</a></li>
+                    <li><a class="main" href="#">Bibliografie</a></li>    
+                </ul>
+            </nav>
+			<br>
+        </header>
+    
+        <main>
+                <h1>Pong</h1>
+
+                <section class="row">
+                    <div>
+                        <p>Pong este un joc video de tip arcade care simulează un joc de tenis de masă, creat de Atari și lansat în anul 1972. Este unul dintre primele jocuri video de tip arcade; acesta a fost creat de Allan Alcorn ca un exercițiu de la co-fondatorul Atari Nolan Bushnell, dar Bushnell a fost surprins de calitatea jocului și a decis să lanseze jocul.
+                        <p>Pong a fost primul joc video care a avut parte de succes. Curând după lansarea jocului, multe companii au început să producă jocuri care imitau gameplay-ul acestuia. În cele din urmă, competitorii au început să lanseze  jocuri video care deviază de la formatul original al jocului, care a influențat Atari să treacă de Pong și să producă jocuri mai inovative, formând astfel industria jocurilor video.
+                    </div> 
+                    <img src="../assets/Pong_game_on_TV.jpg" height="250px">
+                    </section>
+
+                <section>
+                    <h2>Gameplay</h2>
+                    <p>Pong este un joc 2D care simulează un joc de tenis de masă. Jucătorii controelază paletele ca să paseze mingea de la unul la celălalt. Acesta se poate juca cu un alt jucător, care controlează paleta de pe partea opusă sau cu un AI. Scopul este să obții zece puncte înaintea adversarului, pe care le primești când celălalt jucător nu reusește să paseze mingea, aceasta trecând de paleta lui.
+                
+                    </section>
+
+                <section>
+                    <h2>Mecanicile jocului</h2>
+                    <ol>
+                        <li>
+                            <h3>Game-loop</h3>
+                            <p>Un joc este, în teorie, un ciclu infinit. În fiecare iterație a ciclului, efectuăm următorul set de pași:</p>
+                            <ul>
+                                <li>procesăm input-ul. Mai exact verificăm dacă utilizatorul a apăsat o tastă de pe tastatură, a mutat joystick-ul etc;</li>
+                                <li>răspundem la input, actualizând tot ce depinde de input (spre ex: detectăm coliziunile). Față de majoritatea aplicațiilor însă, jocurile continuă să funcționeze chiar dacă utilizatorul nu a făcut nimic, așa că trebuie să actualizăm ș ice nu depinde de input-ul jucătorului;</li>
+                                <li>actualizăm ecranul, astfel încât jucătorul să poată vedea că jocul s-a schimbat.</li>
+                            </ul>
+
+                        </li>
+                        <li>coord 2D</li>
+                        <li>explica cum se misca paletele</li>
+                        <li>explica cum functioneaza mingea</li>
+                        <li>AABB collision</li>
+                        <li>explica cum functioneaza AI-ul</li>
+                    </ol>
+                </section>
+
+               <div class="center"><a class="bttn-main" href="pong-game/pong-game.html">Deschide jocul</a></div>
+        </main>
+        
+        <footer>
+            ATESTAT 2022-2023
+        </footer>
+
+    </body>
+
+</html>
