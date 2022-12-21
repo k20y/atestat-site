@@ -72,7 +72,6 @@ header
     
     background-color: rgb(var(--bg));
     padding-top: 1em;
-    margin-bottom: 2em;
 }
 
 /*LOGO*/
@@ -242,9 +241,34 @@ footer
     align-items: center;
 }
 
+.left
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .space-between
 {
     justify-content: space-between;
+}
+
+.sub-list
+{
+    margin-left: 4rem;
+}
+
+.img-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container p
+{
+    text-align: center;
 }
 
 /*Disables the highlight for symbols*/
@@ -293,7 +317,7 @@ header,footer,main {
     }
     footer,main
     {
-        padding-right: 20%;
-        padding-left: 20%;
+        padding-right: 25%;
+        padding-left: 25%;
     }
 }
