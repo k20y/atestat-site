@@ -24,23 +24,23 @@
             <a class="logo"href="../index.html"><img src="../logo.png"></a>
             
             <nav>
-                <ul>
-
-                    <li class="dropdown-menu">
-                        <a class="main" href="#" >Jocuri<span class="material-symbols-outlined">expand_more</span></a>
-                            <ul class="dropdown">
-                            <li><a href="pong.html">Pong</a></li>
-                            <li><a href="flappy-bird.html">Flappy Bird</a></li>
-                            <li><a href="#">Subcategorie 3</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a class="main" href="#">Despre</a></li>
-                    <li><a class="main" href="#">Contact</a></li>
-                    <li><a class="main" href="#">Bibliografie</a></li>    
-                </ul>
-            </nav>
-			<br>
+              <ul>
+      
+                  <li class="dropdown-menu">
+                      <a class="main" href="#" >Jocuri<span class="material-symbols-outlined">expand_more</span></a>
+                          <ul class="dropdown">
+                          <li><a href="pong.html">Pong</a></li>
+                          <li><a href="flappy-bird.html">Flappy Bird</a></li>
+                          <li><a href="#">Subcategorie 3</a></li>
+                      </ul>
+                  </li>
+      
+                  <li><a class="main" href="#">Despre</a></li>
+                  <li><a class="main" href="#">Contact</a></li>
+                  <li><a class="main" href="#">Bibliografie</a></li>    
+              </ul>
+          </nav>
+      <br>
         </header>
     
         <main>
@@ -51,7 +51,10 @@
                         <p>Pong este un joc video de tip arcade care simulează un joc de tenis de masă, creat de Atari și lansat în anul 1972. Este unul dintre primele jocuri video de tip arcade; acesta a fost creat de Allan Alcorn ca un exercițiu de la co-fondatorul Atari Nolan Bushnell, dar Bushnell a fost surprins de calitatea jocului și a decis să lanseze jocul.
                         <p>Pong a fost primul joc video care a avut parte de succes. Curând după lansarea jocului, multe companii au început să producă jocuri care imitau gameplay-ul acestuia. În cele din urmă, competitorii au început să lanseze  jocuri video care deviază de la formatul original al jocului, care a influențat Atari să treacă de Pong și să producă jocuri mai inovative, formând astfel industria jocurilor video.
                     </div> 
-                    <img src="../assets/Pong_game_on_TV.jpg" height="250px">
+                    <div class = "img-container">
+                        <img src="../assets/Pong_game_on_TV.jpg" height="250px">
+                        <p>Pong pe un televizor</p>
+                    </div>
                     </section>
 
                 <section>
@@ -61,23 +64,45 @@
                     </section>
 
                 <section>
-                    <h2>Mecanicile jocului</h2>
+                    <h2>Concepte importante</h2>
                     <ol>
                         <li>
                             <h3>Game-loop</h3>
-                            <p>Un joc este, în teorie, un ciclu infinit. În fiecare iterație a ciclului, efectuăm următorul set de pași:</p>
-                            <ul>
-                                <li>procesăm input-ul. Mai exact verificăm dacă utilizatorul a apăsat o tastă de pe tastatură, a mutat joystick-ul etc;</li>
-                                <li>răspundem la input, actualizând tot ce depinde de input (spre ex: detectăm coliziunile). Față de majoritatea aplicațiilor însă, jocurile continuă să funcționeze chiar dacă utilizatorul nu a făcut nimic, așa că trebuie să actualizăm ș ice nu depinde de input-ul jucătorului;</li>
-                                <li>actualizăm ecranul, astfel încât jucătorul să poată vedea că jocul s-a schimbat.</li>
-                            </ul>
+                            <div class="column center">
+                                <div>
+                                    <p>Un joc este, în teorie, un ciclu infinit. În fiecare iterație a ciclului, efectuăm următorii pași:</p>
+                                    <ul class="sub-list">
+                                        <li>procesăm input-ul. Mai exact verificăm dacă utilizatorul a apăsat o tastă de pe tastatură, a mutat joystick-ul etc;</li>
+                                        <li>răspundem la input, actualizând tot ce depinde de input (ex: mișcăm caracterul). Față de majoritatea aplicațiilor însă, jocurile continuă să funcționeze chiar dacă utilizatorul nu a făcut nimic, așa că trebuie să actualizăm și ce nu depinde de input-ul jucătorului;</li>
+                                        <li>actualizăm ecranul, astfel încât jucătorul să poată vedea ce s-a schimbat în joc.</li>
+                                    </ul>
+                                </div>
+                                <div class = "img-container">
+                                    <img src="../assets/game-loop.png" height="250px">
+                                </div>
+                            </div>
 
                         </li>
-                        <li>coord 2D</li>
-                        <li>explica cum se misca paletele</li>
-                        <li>explica cum functioneaza mingea</li>
-                        <li>AABB collision</li>
-                        <li>explica cum functioneaza AI-ul</li>
+                        <li>
+                            <h3>Sistemul de coordonate bidimensional</h3>
+                           <div class="row left">
+                                <p>Majoritatea jocurilor 2D au toate obiectele reprezentate în sistemul de coordonate bidimensional. În LOVE2D, acest sistem este puțin diferit de cel întâlnit în matematică, deoarece Y ia valori pozitive când este  sub origine și valori negative când este deasupra originii. Originea, în contextul jocurilor, este punctul din stânga sus al ecranului.
+                                
+                                <div class="img-container">
+                                    <img src="../assets//2d-coord-system.png" height="200px">
+                                    <p>Reprezentarea sistemului de coordonate in LOVE2D</p>
+                                </div>
+                           </div>
+                        </li>
+                        <li>
+                            <h3>Detectarea coliziunilor</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </li>
+
+                        <li>
+                            <h3>AI-ul</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet nisl purus in mollis nunc sed id semper. Id venenatis a condimentum vitae. Elit ut aliquam purus sit amet. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Tellus mauris a diam maecenas sed enim ut. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Sed libero enim sed faucibus turpis in eu. </p>
+                        </li>
                     </ol>
                 </section>
 
